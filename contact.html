@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Our Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#home" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                TAMIL <span>TECH</span>
+            </a>
+
+            <label for="abc"><!--idha display none kudutha mobila show agu lap la agadhu--->
+                <i class="fa-solid fa-bars menu"></i><!----icons only show in mobile-->
+            </label>
+            <input class="box" id="abc" type="checkbox">
+            <!--content-->
+            <div class="content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="departments.html">Departments</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-gray" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Get In Touch</h2>
+                <p class="fade-in">We'd love to hear from you. Reach out with any questions.</p>
+            </div>
+
+            <!-- Left: Info + Map -->
+            <div class="contact-info fade-in">
+
+                <div class="contact-info-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Our Address</h4>
+                        <p>123 North street, Thanjavur, Tamil Nadu - 613203</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>+91 9800 893 4347</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>admissions@nextgentech.edu.in</p>
+                    </div>
+                </div>
+
+                <!-- Google Map Embed -->
+                <div class="map-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.90089684622!2d80.06892064999999!3d13.0474816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!-- Right: Contact Form -->
+            <form class="contact-form fade-in" id="contactForm">
+
+                <div class="form-row">
+                    <input type="text" class="form-input" id="fname" placeholder="Full Name" required>
+                    <input type="email" class="form-input" id="femail" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="tel" class="form-input" id="fphone" placeholder="Phone Number">
+                    <input type="text" class="form-input" id="fsubject" placeholder="Subject">
+                </div>
+
+                <div class="form-row-single">
+                    <textarea class="form-input" id="fmessage" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Send Message</button>
+
+            </form>
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
